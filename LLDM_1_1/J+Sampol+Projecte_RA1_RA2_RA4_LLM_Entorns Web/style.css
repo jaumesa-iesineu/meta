@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+body {
+    background: #000000;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.capcalera_lloc {
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.pagina_copyright {
+    padding: 24px;
+}
+
+.enllaç_tornar {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #001122;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.enllaç_tornar:hover {
+    background: #ffffff;
+    color: #001122;
+}
+
+.capcalera_lloc .interior_capcalera {
+    background: #080428;
+    display: inline-block;
+    padding: 18px 36px;
+    border-radius: 6px;
+}
+
+.capcalera_lloc h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.capcalera_lloc .subtitol {
+    color: #cccccc;
+    margin-top: 6px;
+}
+
+.navegacio_principal {
+    background: #001122;
+    padding: 10px 0;
+    border-top: 0.15px solid #9f9f9f;
+    border-bottom: 0.15px solid #9f9f9f;
+}
+
+.navegacio_principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 6px 12px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navegacio_principal li {
+    float: left;
+}
+
+.navegacio_principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.navegacio_principal a:hover {
+    background: #ffffff;
+    color: #001122;
+}
+
+.contenidor_normal {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 16px;
+}
+
+.graella {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.targeta {
+    background: #11023d;
+    padding: 12px;
+    border: 1px solid #525151;
+}
+
+.targeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #6f6c6c;
+}
+
+.targeta a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    display: block;
+}
+
+.descripcio_targeta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    z-index: 10;
+    max-width: 90%;
+}
+
+.targeta h3 {
+    margin: 12px 0 6px;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #ffffff;
+}
+
+.targeta time {
+    display: block;
+    text-align: right;
+    color: #aaaaaa;
+    font-size: .9rem;
+}
+
+.peu_lloc {
+    background: #111111;
+    padding: 18px 0;
+    margin-top: 28px;
+}
+
+.peu_lloc .interior_peu {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.peu_lloc a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.peu_lloc a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.avis_extern {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000;
+    border: 4px solid #ffffff;
+    padding: 20px;
+    color: #ffffff;
+    width: 400px;
+    box-shadow: 0 0 20px #ffffff;
+    z-index: 99;
+}
+
+.botons_extern {
+    display: flex;
+    gap: 12px; /* afegir espai entre els botons*/
+}
+
+.botons_extern a {
+    display: inline-flex;
+    align-items: center; /* tot ben centradet */
+    justify-content: center;
+    padding: 10px 20px;
+    min-height: 40px;
+    background: #001122;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.botons_extern a#enllaç {
+    background-color: #044a2d;
+}
+.botons_extern a#enllaç:hover {
+    background-color: #0a6c43;
+}
+
+.botons_extern a#tornar-alerta-extern {
+    background-color: #530a0a;
+}
+.botons_extern a#tornar-alerta-extern:hover {
+    background-color: #7e1111;
+}
+
+.titol_alerta_extern {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.vergonya {
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}

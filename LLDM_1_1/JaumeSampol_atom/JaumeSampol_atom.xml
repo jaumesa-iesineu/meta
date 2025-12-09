@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Canal de Notícies - Lloseta</title>
+  <link href="https://www.aemet.es/es/eltiempo/prediccion/municipios/lloseta-id07029"/>
+  <updated>2025-11-17T00:00:00Z</updated>
+  <subtitle>Temps a Lloseta</subtitle>
+  <id>urn:uuid:8f4e2a7b-3c91-4d5e-9b2f-7a1c8e4d6f9a</id>
+  <entry>
+    <title>Temps dilluns 17 de novembre a Lloseta</title>
+    <link href="https://www.aemet.es/es/eltiempo/prediccion/municipios/lloseta-id07029"/>
+    <id>urn:uuid:5b9d3f1e-8c4a-4f2b-a6d7-9e3c5b8f2a1d</id>
+    <updated>2025-11-17T00:00:00Z</updated>
+    <content type="html"><![CDATA[
+      Temps a Lloseta - Dilluns 17
+      <table border="1">
+        <tr>
+          <th>Hora</th>
+          <th>Predicció</th>
+          <th>Temperatura</th>
+          <th>Precipitació</th>
+        </tr>
+        <tr>
+          <td>06-12h</td>
+          <td>Pluja</td>
+          <td>17°C</td>
+          <td>60%</td>
+        </tr>
+        <tr>
+          <td>12-18h</td>
+          <td>Tempesta</td>
+          <td>13°C</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>18-24h</td>
+          <td>Pluja</td>
+          <td>11°C</td>
+          <td>75%</td>
+        </tr>
+      </table>
+    ]]></content>
+  </entry>
+
+  <entry>
+    <title>Notícia: Actualitat local</title>
+    <link href="noticia.html"/>
+    <id>urn:uuid:2c7f9a4e-6b1d-4e8c-9f3a-1d5e7c9b4f2e</id>
+    <updated>2025-11-17T10:00:00Z</updated>
+    <summary>La lista de espera para un piso del Ibavi se dispara y ya hay 10.000 familias de Baleares a la cola</summary>
+  </entry>
+</feed>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampol, Jaume - Horari</title>
+    <link rel="icon" type="image/png" href="../imgs/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="hora primera">Hora</th>
+                <th>Dilluns</th>
+                <th>Dimarts</th>
+                <th>Dimecres</th>
+                <th>Dijous</th>
+                <th>Divendres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="primera">15:00 - 15:55</td>
+                <td class="asignatura progr" rowspan="2">PROGRAMACIÓ<button class="notificacio">Notificar</button></td>
+                <td class="asignatura lleng" rowspan="2">LLENGUATGE DE MARQUES<button class="notificacio">Notificar</button></td>
+                <td class="asignatura digitalitzacio">DIGITALITZACIÓ<button class="notificacio">Notificar</button></td>
+                <td class="asignatura progr" rowspan="2">PROGRAMACIÓ<button class="notificacio">Notificar</button></td>
+                <td class="asignatura base" rowspan="2">BASES DE DADES<button class="notificacio">Notificar</button></td>
+            </tr>
+            <tr>
+                <td class="primera">15:55 - 16:50</td>
+                <td class="asignatura progr">PROGRAMACIÓ<button class="notificacio">Notificar</button></td>
+            </tr>
+            <tr>
+                <td class="primera">16:50 - 17:05</td>
+                <td class="descans" colspan="5">DESCANS</td>
+            </tr>
+            <tr>
+                <td class="primera">17:05 - 18:00</td>
+                <td class="asignatura progr">PROGRAMACIÓ<button class="notificacio">Notificar</button></td>
+                <td class="asignatura lleng">LLENGUATGE DE MARQUES<button class="notificacio">Notificar</button></td>
+                <td class="asignatura progr" rowspan="2">PROGRAMACIÓ<button class="notificacio">Notificar</button></td>
+                <td class="asignatura base" rowspan="2">BASES DE DADES<button class="notificacio">Notificar</button></td>
+                <td class="asignatura progr">PROGRAMACIÓ<button class="notificacio">Notificar</button></td>
+            </tr>
+            <tr>
+                <td class="primera">18:00 - 18:55</td>
+                <td class="asignatura base">BASES DE DADES<button class="notificacio">Notificar</button></td>
+                <td class="asignatura ipoi">IPO<button class="notificacio">Notificar</button></td>
+                <td class="asignatura entorns">ENTORNS DE DESENVOLUPAMENT<button class="notificacio">Notificar</button></td>
+            </tr>
+            <tr>
+                <td class="primera">18:55 - 19:10</td>
+                <td class="descans" colspan="5">DESCANS</td>
+            </tr>
+            <tr>
+                <td class="primera">19:10 - 20:05</td>
+                <td class="asignatura sis" rowspan="2">SISTEMES INFORMÀTICS<button class="notificacio">Notificar</button></td>
+                <td class="asignatura ipoi" rowspan="2">IPO<button class="notificacio">Notificar</button></td>
+                <td class="asignatura entorns" rowspan="2">ENTORNS DE DESENVOLUPAMENT<button class="notificacio">Notificar</button></td>
+                <td class="asignatura lleng" rowspan="2">LLENGUATGE DE MARQUES<button class="notificacio">Notificar</button></td>
+                <td class="asignatura sis" rowspan="2">SISTEMES INFORMÀTICS<button class="notificacio">Notificar</button></td>
+            </tr>
+            <tr>
+                <td class="primera">20:05 - 21:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        //NO ENVIA NOTIFICACIONS realment
+        //S'ha de posar perque es carregui quan acabi de carregar la pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            //Seleccionam totes les td amb classe asignatura
+            const assignatures = document.querySelectorAll('.asignatura');
+            //Variable per definir quina fem click i està activa i quina no
+            let cellaActiva = null;
+            let boto_notificacio = null;
+
+            assignatures.forEach(cella => {
+                cella.addEventListener('click', function() {
+                    if (cellaActiva != null){
+                        cellaActiva.classList.remove('actiu');
+                        boto_notificacio = cellaActiva.querySelector('.notificacio');
+                        boto_notificacio.classList.remove('notificacio_mostrar');
+                    }
+
+                    cella.classList.add('actiu');
+                    cellaActiva = cella;
+                    boto_notificacio = cellaActiva.querySelector('.notificacio');
+                    boto_notificacio.classList.add('notificacio_mostrar');
+                });
+            })
+            document.addEventListener('click', function(click_fet_a) {
+                boto_notificacio = cellaActiva.querySelector('.notificacio');
+                if (!cellaActiva.contains(click_fet_a.target)) {
+                    cellaActiva.classList.remove('actiu');
+                    boto_notificacio.classList.remove('notificacio_mostrar');
+                    cellaActiva = null;
+                }
+                if (click_fet_a.target == boto_notificacio){
+                    if (boto_notificacio.classList.contains('notificacio_programada')) {
+                        boto_notificacio.classList.remove('notificacio_programada');
+                        boto_notificacio.textContent = 'Notificar';
+                    } else {
+                        boto_notificacio.classList.add('notificacio_programada');
+                        boto_notificacio.textContent = 'Es notificarà!';
+                    }
+                }
+            })
+            
+        });
+    </script>
+</body>
+</html>

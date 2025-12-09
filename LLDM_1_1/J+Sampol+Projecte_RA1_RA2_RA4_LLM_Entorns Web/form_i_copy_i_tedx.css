@@ -1,0 +1,98 @@
+.capcalera_formulari {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+.formulari_subscripcio {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 30px;
+  background: #241849;
+  border: 1px solid #525151;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.camp_formulari {
+  margin-bottom: 15px;
+}
+
+.camp_formulari label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.camp_formulari input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.grup_opcions {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.grup_opcions legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* Etiquetes de checkbox */
+.etiqueta_checkbox {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.etiqueta_checkbox input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+#boto_subscriure,
+#boto_tornar {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#boto_subscriure {
+  background: #044a2d;
+  color: #ffffff;
+}
+
+#boto_subscriure:hover {
+  background: #0a6c43;
+  color: #ffffff;
+}
+
+#boto_tornar {
+  background: #001122;
+  color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#boto_tornar:hover {
+  background: #ffffff;
+  color: #001122;
+}

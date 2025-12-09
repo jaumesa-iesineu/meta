@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #d9d4d4;
+    padding: 20px;
+}
+
+.contenidor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.capçalera {
+    background: #202020;
+    padding: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 1px solid #393939;
+}
+
+.capçalera h1 {
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.capçalera p {
+    color: #8c8a8a;
+}
+
+.contingut {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tema {
+    background: #1c1c1c;
+    padding: 25px;
+    border: 1px solid #2a2a2a;
+}
+
+.titol-tema {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 8px;
+}
+
+.practiques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.practica {
+    flex: 1 1 240px;
+    background: #282828;
+    border: 1px solid #323232;
+    text-decoration: none;
+    color: #d8d8d8;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.practica:hover {
+    border-color: #2980b9;
+}
+
+.imatge {
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info {
+    padding: 18px;
+}
+
+.practica h3 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.practica p {
+    color: #979595;
+    font-size: 0.9rem;
+}
+
+.peu {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #979595;
+    margin-top: 30px;
+}

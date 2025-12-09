@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Canal de Notícies - Lloseta</title>
+		<link>https://www.aemet.es/es/eltiempo/prediccion/municipios/lloseta-id07029</link>
+		<description>Temps a Lloseta</description>
+		<language>ca</language>
+
+		<item>
+			<title>Temps dilluns 17 de novembre a Lloseta</title>
+			<link>https://www.aemet.es/es/eltiempo/prediccion/municipios/lloseta-id07029</link>
+			<description>
+				<![CDATA[
+				Temps a Lloseta - Dilluns 17
+				<table border="1">
+					<tr>
+						<th>Hora</th>
+						<th>Predicció</th>
+						<th>Temperatura</th>
+						<th>Precipitació</th>
+					</tr>
+					<tr>
+						<td>06-12h</td>
+						<td>Pluja</td>
+						<td>17°C</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<td>12-18h</td>
+						<td>Tempesta</td>
+						<td>13°C</td>
+						<td>90%</td>
+					</tr>
+					<tr>
+						<td>18-24h</td>
+						<td>Pluja</td>
+						<td>11°C</td>
+						<td>75%</td>
+					</tr>
+				</table>
+				]]>
+			</description>
+			<image>
+				<url>http://localhost/web_exemple/lloseta.jpg</url>
+				<link>http://localhost</link>
+				<title>Temps dilluns 17 de novembre a Lloseta</title>
+			</image>
+			<pubDate>Mon, 17 Nov 2025 00:00:00 GMT</pubDate>
+		</item>
+
+		<item>
+			<title>Notícia: Actualitat local</title>
+			<link>noticia.html</link>
+			<description>La lista de espera para un piso del Ibavi se dispara y ya hay 10.000 familias de Baleares a la cola</description>
+			<image>
+				<url>http://localhost/web_exemple/ibavi.jpg</url>
+				<link>http://localhost</link>
+				<title>Temps dilluns 17 de novembre a Lloseta</title>
+			</image>
+			<pubDate>Mon, 17 Nov 2025 10:00:00 GMT</pubDate>
+		</item>
+
+	</channel>
+</rss>

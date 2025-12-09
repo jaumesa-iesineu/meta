@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* wow variables (mode pro total) */
+:root {
+    --vermell-valorant: #FF4655;
+    --casi-negre: #0F1923;
+    --t-claret: #ECE8E1;
+    --t-gris: #9AA4B0;
+}
+
+/* base general */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--casi-negre);
+    color: var(--t-claret);
+}
+
+/* texte */
+/* hx */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--vermell-valorant);
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--t-claret);
+    margin-bottom: 0.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+/* paràgrefs i més */
+p {
+    font-size: 1rem;
+    color: var(--t-claret);
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+    color: var(--t-claret);
+}
+
+/* navegació */
+nav {
+    padding: 1.2rem 2rem;
+    border-bottom: 2px solid var(--vermell-valorant);
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+        li a {
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            &:hover {
+                color: var(--vermell-valorant);
+            }
+            &.active {
+                background-color: var(--vermell-valorant);
+                color: var(--t-claret);
+            }
+        }
+    }
+}
+
+/* cos html */
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #2D3741;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 2px solid var(--vermell-valorant);
+    p {
+        color: var(--t-gris);
+        font-size: 0.9rem;
+    }
+}
+
+.section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid #2D3741;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.seccio_galeria {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid #2D3741;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.seccio_rapidament {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.targeta_r {
+    background-color: #89010d;
+    width: 20%;
+    border-radius: 8px;
+    border: 3px solid #0000008f;
+    &:hover {
+        background-color: #bc2e2e;
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 500;
+    color: var(--t-claret);
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--casi-negre);
+    border: 2px solid #2D3741;
+    border-radius: 5px;
+    color: var(--t-claret);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--vermell-valorant);
+}
+
+button[type="submit"],
+input[type="submit"] {
+    transition: all 0.4s ease;
+    background-color: var(--vermell-valorant);
+    color: var(--t-claret);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+        background-color: #398ae6;
+    }
+}
+
+/* taula estadistiques */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+thead {
+    background-color: var(--vermell-valorant);
+    th {
+        padding: 1rem;
+        text-align: left;
+        font-weight: 700;
+        color: var(--t-claret);
+    }
+}
+tbody {
+    border: 3px solid rgb(128, 128, 128);
+    tr {
+        border-bottom: 1px solid #2D3741;
+        transition: transform 0.2s ease;
+        &:nth-child(even) {
+            background-color: #282828;
+        }
+        &:hover {
+            background-color: #8c0914;
+        }
+    }
+    td {
+        padding: 0.9rem 1rem;
+        color: var(--t-gris);
+        &:first-child {
+            font-weight: 500;
+            color: var(--t-claret);
+        }
+        &:nth-child(n+2) {
+            text-align: right;
+        }
+    }
+}
+
+
+
+/* galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    figure {
+        width: 40%;
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.7);
+        }
+
+        figcaption {
+            text-align: center;
+            color: var(--t-gris);
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+/* clip ace i audio sorpresa */
+video,
+audio {
+    width: 100%;
+    max-width: 800px;
+    margin: 1.5rem auto;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #2D3741;
+}
+
+.boto_tracker {
+    display: flex;
+    background-color: rgb(227, 33, 59);
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid #2D3741;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.section_tracker {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 100px;
+}

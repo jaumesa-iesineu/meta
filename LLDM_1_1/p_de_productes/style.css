@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ededed;
+}
+
+.titol-principal {
+    margin: 20px;
+}
+
+.descripcio {
+    margin: 20px;
+    text-align: center;
+}
+
+.titol-taula {
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+.taula-producte {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+
+    thead {
+        background-color: #1e1e1e;
+        color: white;
+    }
+
+    td {
+        border: 1px solid #1e1e1e;
+        padding: 10px;
+    }
+
+    th {
+        border: 1px solid #1e1e1e;
+        padding: 10px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    tbody tr:hover {
+        background-color: #d4d4d4;
+        transition: background-color 0.3s ease;
+    }
+
+}
+
+
+.titol-seccio {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-producte {
+    border: 2px solid #000000;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.audio-producte {
+    border: 2px solid #000000;
+    border-radius: 9px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.r_audiovisuals {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #1e1e1e;
+    margin-bottom: -13px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    p {
+        text-align: center;
+        color: aliceblue;
+        padding-top: 20px;
+    }
+}
